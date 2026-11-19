@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kembara Bahasa Melayu Tahun 4 (KSSR Semakan)</title>
+
+    <!-- Favicon & Ikon Aplikasi Kembara BM -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Boukenn/kembara-bm-tahun-4/1cebf87f59df6e7a3842ab21e7bd47e311db1f81/kembara_bm_logo_512.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Boukenn/kembara-bm-tahun-4/1cebf87f59df6e7a3842ab21e7bd47e311db1f81/kembara_bm_logo_512.png">
+
     <!-- Fon Google & Ikon FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,6 +179,19 @@
             max-width: 480px;
             margin: auto;
             box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .brand-logo-img {
+            width: 96px;
+            height: 96px;
+            object-fit: contain;
+            border-radius: 22px;
+            margin: 0 auto 12px;
+            display: block;
+            box-shadow: 0 8px 18px rgba(79, 70, 229, 0.22);
+            border: 3px solid #EEF2FF;
+            background: #FFFFFF;
+            padding: 4px;
         }
 
         .auth-card h1 {
@@ -1037,7 +1055,13 @@
                     <i class="fa-solid fa-spinner fa-spin"></i> Menyambung ke Firebase...
                 </div>
                 <br>
-                <i class="fa-solid fa-graduation-cap" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <img
+                    src="https://raw.githubusercontent.com/Boukenn/kembara-bm-tahun-4/1cebf87f59df6e7a3842ab21e7bd47e311db1f81/kembara_bm_logo_512.png"
+                    alt="Logo Kembara BM"
+                    class="brand-logo-img"
+                    onerror="this.style.display='none'; document.getElementById('fallback-logo-icon').style.display='inline-block';"
+                >
+                <i id="fallback-logo-icon" class="fa-solid fa-graduation-cap" style="display:none; font-size: 3.5rem; color: var(--primary); margin-bottom: 10px;"></i>
                 <h1>Kembara BM 4</h1>
                 <p style="color: #64748B; font-weight: 700; margin-bottom: 15px;">Daftar profil anda untuk bermula!</p>
                 
